@@ -21,7 +21,20 @@ class MyApp extends StatelessWidget {
               ),
               Text(
                 "Qwerty",
-                style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontFamily: 'OpenSans',
+                    fontSize: 40.0,
+                    fontWeight: FontWeight.bold),
+              ),
+              Text(
+                "FLUTTER DEVELOPER",
+                style: TextStyle(
+                  fontFamily: "OpenSans",
+                  color: Colors.black,
+                  fontSize: 20,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
               )
             ],
           ),
