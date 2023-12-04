@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,13 +7,42 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blue,
-        body: Container(),
+        body: SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Container(
+                width: double.infinity,
+                height: 100,
+                color: Colors.greenAccent,
+                child: Text("Container1"),
+              ),
+              Container(
+                width: double.infinity,
+                height: 100,
+                color: Colors.purpleAccent,
+                child: Text("Container2"),
+              ),
+              Container(
+                width: double.infinity,
+                height: 100,
+                color: Colors.yellow,
+                child: Text("Container3"),
+              ),
+              Container(
+                width: double.infinity,
+                height: 100,
+                color: Colors.red,
+                child: Text("Container4"),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
