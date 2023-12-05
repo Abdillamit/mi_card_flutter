@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
                 width: 150,
                 child: Divider(color: Colors.white),
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
                 margin:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
                 child: ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.phone,
                     color: Colors.blue,
                   ),
@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
                 margin:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
                 child: ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.email,
                     color: Colors.blue,
                   ),
