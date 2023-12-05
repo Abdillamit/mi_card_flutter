@@ -9,24 +9,25 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50,
                 backgroundImage: AssetImage('images/avatar.jpeg'),
               ),
-              Text(
-                "Qwerty",
+              const Text(
+                "Flutter",
                 style: TextStyle(
                     fontFamily: 'OpenSans',
                     fontSize: 40.0,
                     fontWeight: FontWeight.bold),
               ),
-              Text(
+              const Text(
                 "FLUTTER DEVELOPER",
                 style: TextStyle(
                   fontFamily: "OpenSans",
@@ -34,6 +35,47 @@ class MyApp extends StatelessWidget {
                   fontSize: 20,
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(color: Colors.white),
+              ),
+              Card(
+                color: Colors.white,
+                margin:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.blue,
+                  ),
+                  title: Text(
+                    "+996 507 22 88 48",
+                    style: TextStyle(
+                        color: Colors.blue.shade900,
+                        fontFamily: "OpenSans",
+                        fontSize: 15),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.blue,
+                  ),
+                  title: Text(
+                    "abdillamit.dev@gmail.com",
+                    style: TextStyle(
+                        color: Colors.blue.shade900,
+                        fontFamily: "OpenSans",
+                        fontSize: 15),
+                  ),
                 ),
               )
             ],
